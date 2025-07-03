@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Controle de Chromebooks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Controle de Chromebooks</h1>
+
+    <button id="darkModeToggle">🌙 Modo Escuro</button>
+
+    <form id="formulario">
+      <input type="text" id="escola" placeholder="Nome da Escola" required />
+      <input type="text" id="inep" placeholder="INEP" required />
+      <input type="text" id="modelo" placeholder="Modelo" required />
+      <input type="number" id="quantidade" placeholder="Quantidade" required />
+      <input type="date" id="dataEntrega" required />
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <div class="filtros">
+      <input type="text" id="filtroEscola" placeholder="Filtrar por escola" />
+      <input type="date" id="filtroData" />
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Escola</th>
+          <th>INEP</th>
+          <th>Modelo</th>
+          <th>Quantidade</th>
+          <th>Data</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaRegistros"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
